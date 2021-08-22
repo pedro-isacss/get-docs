@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper {
+  display: flex;
+  width: 614px;
+  height: 874px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 56px 24px;
+}
+
+/* === RIGHT === */
+.container .paper .right {
+  width: 40%;
+  padding: 40px 24px;
+}
+
+.container .paper .right .profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .paper .right .profile .imgWrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container .paper .right .profile input[type="file"] {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.container .paper .right .containerTopic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto 0 auto;
+}
+
+.container .paper .right .containerTopic span {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.container .paper .right .containerTopic label {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.container .paper .right .containerTopic label input {
+  margin-left: 8px;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  padding: 2px;
+  width: 100%;
+}
+
+.container .paper .right .containerTopic label input::placeholder {
+  color: #fff;
+}
+
+.container .paper .right .containerTopic label button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* === LEFT === */
+.container .paper .left {
+  width: 60%;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .paper .left input,
+.container .paper .left textarea {
+  border: none;
+  width: 100%;
+}
+
+.container .paper .left .name {
+  font-size: 40px;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.container .paper .left hr {
+  width: 100px;
+  margin: 16px 0;
+}
+
+.container .paper .left .profession {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 36px;
+}
+
+.container .paper .left span {
+  font-size: 18px;
+  margin-top: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.7;
+  letter-spacing: 2px;
+}
+
+.container .paper .left .textarea {
+  margin-top: 12px;
+  color: #666;
+  font-size: 16px;
+  resize: none;
+  padding: 4px 0;
+}
+
+/* === Download button === */
+.downloadBtn {
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+  background-color: #4287f5;
+  border: none;
+  padding: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+}
