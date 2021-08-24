@@ -9,13 +9,12 @@
   display: flex;
   width: 614px;
   height: 874px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   margin: 56px 24px;
 }
 
 /* === RIGHT === */
 .container .paper .right {
-  width: 40%;
+  width: 45%;
   padding: 40px 24px;
 }
 
@@ -61,26 +60,37 @@
   letter-spacing: 2px;
 }
 
-.container .paper .right .containerTopic label {
+.container .paper .right .containerTopic label,
+.container .paper .right .containerTopic .label {
   display: flex;
-  align-items: center;
   margin-top: 12px;
+  width: 100%;
 }
 
-.container .paper .right .containerTopic label input {
+.container .paper .right .containerTopic label svg,
+.container .paper .right .containerTopic .label svg {
+  min-width: 24px;
+}
+
+.container .paper .right .containerTopic label p,
+.container .paper .right .containerTopic .label p {
   margin-left: 8px;
   border: none;
   color: #fff;
   background-color: transparent;
   padding: 2px;
   width: 100%;
+  max-width: 192px;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  cursor: pointer;
 }
 
-.container .paper .right .containerTopic label input::placeholder {
-  color: #fff;
-}
-
-.container .paper .right .containerTopic label button {
+.container .paper .right .containerTopic label button,
+.container .paper .right .containerTopic .label button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -88,16 +98,10 @@
 
 /* === LEFT === */
 .container .paper .left {
-  width: 60%;
+  width: 55%;
   padding: 40px 24px;
   display: flex;
   flex-direction: column;
-}
-
-.container .paper .left input,
-.container .paper .left textarea {
-  border: none;
-  width: 100%;
 }
 
 .container .paper .left .name {
@@ -109,8 +113,11 @@
 }
 
 .container .paper .left hr {
-  width: 100px;
+  width: 150px;
   margin: 16px 0;
+  height: 3px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .container .paper .left .profession {
@@ -136,14 +143,60 @@
   font-size: 16px;
   resize: none;
   padding: 4px 0;
+  max-width: 100%;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  cursor: pointer;
 }
 
 /* === Download button === */
-.downloadBtn {
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   right: 56px;
   bottom: 56px;
-  background-color: #4287f5;
+}
+
+.buttons .colorBtn,
+.buttons .activeAwardsBtn {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .colorBtn input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons .colorBtn input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 100px;
+  height: 48px;
+  width: 48px;
+  opacity: 0;
+}
+
+.buttons .downloadBtn {
   border: none;
   padding: 12px;
   border-radius: 100px;
