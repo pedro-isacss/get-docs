@@ -46,18 +46,6 @@ export const skillsFields = (color) => {
       placeholder: "Skill",
       stars: 1,
     },
-    {
-      icon: <VscDebugBreakpointLogUnverified color={color} size={16} />,
-      iconMarked: <VscDebugBreakpointLog color={color} size={16} />,
-      placeholder: "Skill",
-      stars: 3,
-    },
-    {
-      icon: <VscDebugBreakpointLogUnverified color={color} size={16} />,
-      iconMarked: <VscDebugBreakpointLog color={color} size={16} />,
-      placeholder: "Skill",
-      stars: 2,
-    },
   ];
 };
 

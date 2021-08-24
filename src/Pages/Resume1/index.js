@@ -2,7 +2,8 @@ import { useState } from "react";
 import styles from "./index.module.css";
 import profileImgDefault from "../../images/profile.jpg";
 import { contactMe, awardsReceived, skillsFields } from "./utils";
-import { AiFillFilePdf } from "react-icons/ai";
+import { AiFillFilePdf, AiOutlineBgColors } from "react-icons/ai";
+import { RiBookmark3Line } from "react-icons/ri";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
@@ -11,6 +12,7 @@ const Resume1 = () => {
   const [skills, setSkills] = useState(skillsFields("#fff"));
   const [canChangeSkillsStars, setCanChangeSkillsStars] = useState(true);
   const [colorTheme, setColorTheme] = useState("#4287f5");
+  const [activeAwards, setActiveAwards] = useState(true);
   const contactme = contactMe("#fff");
   const awards = awardsReceived("#fff");
 
@@ -29,10 +31,10 @@ const Resume1 = () => {
   const handleDownloadAsPDF = () => {
     const paper = document.getElementById("paper");
     html2canvas(paper).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF();
-      pdf.addImage(imgData, "PNG", 24, 24);
-      pdf.output("dataurlnewwindow");
+      const imgData = canvas.toDataURL("image/JPEG");
+      const pdf = new jsPDF("p", "px", [345, 492]);
+      pdf.addImage(imgData, "JPEG", 0, 0);
+      pdf.save("resume.pdf");
     });
   };
 
@@ -59,7 +61,7 @@ const Resume1 = () => {
               return (
                 <label key={contact.placeholder}>
                   {contact.icon}
-                  <input placeholder={contact.placeholder} />
+                  <p contentEditable={true}>{contact.placeholder}</p>
                 </label>
               );
             })}
@@ -68,7 +70,7 @@ const Resume1 = () => {
             <span>Skills summary</span>
             {skills.map((skill, index) => {
               return (
-                <label key={index}>
+                <div className={styles.label} key={index}>
                   <button onClick={() => handleChangeSkillsStars(index, 1)}>
                     {skill.iconMarked}
                   </button>
@@ -78,64 +80,82 @@ const Resume1 = () => {
                   <button onClick={() => handleChangeSkillsStars(index, 3)}>
                     {skill.stars >= 3 ? skill.iconMarked : skill.icon}
                   </button>
-                  <input placeholder={skill.placeholder} />
-                </label>
+                  <p contentEditable={true}>{skill.placeholder}</p>
+                </div>
               );
             })}
           </div>
-          <div className={styles.containerTopic}>
-            <span>Awards received</span>
-            {awards.map((award, index) => {
-              return (
-                <label key={index}>
-                  {award.icon}
-                  <input placeholder={award.placeholder} />
-                </label>
-              );
-            })}
-          </div>
+          {activeAwards && (
+            <div className={styles.containerTopic}>
+              <span>Awards received</span>
+              {awards.map((award, index) => {
+                return (
+                  <label key={index}>
+                    {award.icon}
+                    <p contentEditable={true}>{award.placeholder}</p>
+                  </label>
+                );
+              })}
+            </div>
+          )}
         </div>
         <div className={styles.left}>
-          <input
+          <p
             className={styles.name}
-            placeholder="Your Name"
             style={{ color: colorTheme }}
-          />
+            contentEditable={true}
+          >
+            Your name
+          </p>
           <hr />
-          <input
+          <p
             className={styles.profession}
             style={{ color: colorTheme }}
-            placeholder="What you do"
-          />
+            contentEditable={true}
+          >
+            What you do
+          </p>
           <span style={{ color: colorTheme }}>Personal profile</span>
-          <textarea
-            wrap="soft"
-            rows={8}
-            className={styles.textarea}
-            placeholder="Talk about you"
-          />
+          <pre className={styles.textarea} contentEditable={true}>
+            Talk about you
+          </pre>
           <span style={{ color: colorTheme }}>Work experience</span>
-          <textarea
-            wrap="soft"
-            rows={8}
-            className={styles.textarea}
-            placeholder="Talk about your work experience"
-          />
+          <pre contentEditable={true} className={styles.textarea}>
+            Talk about your work experience
+          </pre>
           <span style={{ color: colorTheme }}>Educational history</span>
-          <textarea
-            wrap="soft"
-            rows={8}
-            className={styles.textarea}
-            placeholder="Talk about your education"
-          />
+          <pre contentEditable={true} className={styles.textarea}>
+            Talk about your education
+          </pre>
         </div>
       </div>
-      <button
-        onClick={() => handleDownloadAsPDF()}
-        className={styles.downloadBtn}
-      >
-        <AiFillFilePdf color="#fff" size={56} />
-      </button>
+      <div className={styles.buttons}>
+        <button
+          onClick={() => setActiveAwards(!activeAwards)}
+          className={styles.activeAwardsBtn}
+        >
+          <RiBookmark3Line
+            style={{ opacity: activeAwards ? 1 : 0.5 }}
+            color={colorTheme}
+            size={32}
+          />
+        </button>
+        <button className={styles.colorBtn}>
+          <input
+            type="color"
+            onChange={(e) => setColorTheme(e.target.value)}
+            value={colorTheme}
+          />
+          <AiOutlineBgColors color={colorTheme} size={32} />
+        </button>
+        <button
+          style={{ backgroundColor: colorTheme }}
+          onClick={() => handleDownloadAsPDF()}
+          className={styles.downloadBtn}
+        >
+          <AiFillFilePdf color="#fff" size={40} />
+        </button>
+      </div>
     </div>
   );
 };
