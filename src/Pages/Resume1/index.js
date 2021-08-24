@@ -1,17 +1,19 @@
 import { useState } from "react";
 import styles from "./index.module.css";
-import profileImgDefault from "../../images/profile.jpg";
+import profileImgDefault from "./profile.jpg";
 import { contactMe, awardsReceived, skillsFields } from "./utils";
 import { AiFillFilePdf, AiOutlineBgColors } from "react-icons/ai";
 import { RiBookmark3Line } from "react-icons/ri";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import NavBar from "../../Components/NavBar";
+import Footer from "../../Components/Footer";
 
 const Resume1 = () => {
   const [profileImg, setProfileImg] = useState(profileImgDefault);
   const [skills, setSkills] = useState(skillsFields("#fff"));
   const [canChangeSkillsStars, setCanChangeSkillsStars] = useState(true);
-  const [colorTheme, setColorTheme] = useState("#4287f5");
+  const [colorTheme, setColorTheme] = useState("#002d33");
   const [activeAwards, setActiveAwards] = useState(true);
   const contactme = contactMe("#fff");
   const awards = awardsReceived("#fff");
@@ -40,6 +42,7 @@ const Resume1 = () => {
 
   return (
     <div className={styles.container}>
+      <NavBar />
       <div className={styles.paper} id="paper">
         <div className={styles.right} style={{ backgroundColor: colorTheme }}>
           <div className={styles.profile}>
@@ -156,6 +159,7 @@ const Resume1 = () => {
           <AiFillFilePdf color="#fff" size={40} />
         </button>
       </div>
+      <Footer />
     </div>
   );
 };

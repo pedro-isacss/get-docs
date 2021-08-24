@@ -1,19 +1,21 @@
 import styles from "./index.module.css";
-import logo from "../../images/logo.svg";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div className={styles.container}>
-      <a href="#" className={styles.logo}>
-        <img src={logo} alt="Get Docs" />
-      </a>
-      <nav>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-        <a href="#">Menu</a>
-      </nav>
+      <div>
+        <Link to="/" className={styles.logo}>
+          <img src="/icons/logo.svg" alt="Get Docs" />
+        </Link>
+        <nav>
+          <a href="#">Menu</a>
+          <a href="#">Menu</a>
+          <a href="#">Menu</a>
+          <a href="#">Menu</a>
+          <a href="#">Menu</a>
+        </nav>
+      </div>
     </div>
   );
 };

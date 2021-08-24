@@ -1,14 +1,22 @@
+.bannerContainer {
+  padding: 0 var(--paddingMaxWidth);
+  margin-top: 48px;
+}
+
 .banner {
   width: 100%;
   max-width: calc(var(--maxWidth) - 2 * var(--paddingMaxWidth));
-  margin: 24px auto 0 auto;
+  margin: 0 auto;
   background-color: var(--theme);
-  padding: 64px var(--paddingMaxWidth);
+  padding: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 32px;
   box-shadow: var(--shadow);
+}
+
+.banner div {
 }
 
 .banner h1 {
@@ -32,4 +40,29 @@
   padding: 12px;
   border-radius: var(--radius);
   font-weight: 500;
+}
+
+.templates {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 23%);
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--maxWidth);
+  padding: var(--paddingMaxWidth);
+  margin: 40px auto 0 auto;
+  grid-template-rows: masonry;
+}
+
+.templates a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.templates img {
+  width: 100%;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
 }
