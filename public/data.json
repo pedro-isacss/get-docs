@@ -1,7 +1,14 @@
 [
   {
+    "image": "/images/instagram-1.jpg",
+    "link": "/instagram-1",
+    "name": "Instagram 1",
+    "type": "social_network"
+  },
+  {
     "image": "/images/resume-1.jpg",
     "link": "/resume-1",
-    "name": "Resume 1"
+    "name": "Resume 1",
+    "type": "professional"
   }
 ]

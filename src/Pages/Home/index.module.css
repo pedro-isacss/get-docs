@@ -43,22 +43,20 @@
 }
 
 .templates {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 23%);
-  gap: 16px;
-  justify-content: center;
+  column-count: 3;
   width: 100%;
   max-width: var(--maxWidth);
+  margin: 24px auto 0 auto;
   padding: var(--paddingMaxWidth);
-  margin: 40px auto 0 auto;
-  grid-template-rows: masonry;
+  gap: 24px;
 }
 
 .templates a {
   width: 100%;
-  display: flex;
+  display: inline-block;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 24px;
 }
 
 .templates img {

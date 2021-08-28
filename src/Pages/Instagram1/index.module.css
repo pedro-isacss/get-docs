@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper {
+  width: 1080px;
+  height: 1080px;
+  margin: 180px 24px;
+  zoom: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .paper .imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: 700px;
+  height: 700px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .paper .imgWrapper input[type="file"] {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  opacity: 0;
+}
+
+.container .paper .imgWrapper p {
+  position: absolute;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.container .paper .imgWrapper .text1 {
+  top: -72px;
+}
+
+.container .paper .imgWrapper .text2 {
+  bottom: -72px;
+  transform: rotate(-180deg);
+}
+
+.container .paper .imgWrapper .text3 {
+  transform: rotate(-90deg) translateY(-404px);
+}
+
+.container .paper .imgWrapper .text4 {
+  transform: rotate(90deg) translateY(-404px);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .textColorBtn,
+.buttons .colorBtn {
+  margin-bottom: 24px;
+  width: 48px;
+  height: 48px;
+  box-shadow: var(--shadow);
+  position: relative;
+  background-color: #fff;
+}
+
+.buttons .textColorBtn input,
+.buttons .colorBtn input {
+  position: absolute;
+  background-color: violet;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons .textColorBtn input::-webkit-color-swatch,
+.buttons .colorBtn input::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+.buttons .downloadBtn {
+  padding: 12px;
+}

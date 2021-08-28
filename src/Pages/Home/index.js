@@ -43,6 +43,9 @@ const Home = () => {
         <a href="#">
           <img src="./images/resume-1.jpg" />
         </a>
+        <a href="#">
+          <img src="./images/instagram-1.jpg" />
+        </a>
       </section>
       <Footer />
     </div>

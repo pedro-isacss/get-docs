@@ -34,8 +34,9 @@ const Resume1 = () => {
     const paper = document.getElementById("paper");
     html2canvas(paper).then((canvas) => {
       const imgData = canvas.toDataURL("image/JPEG");
-      const pdf = new jsPDF("p", "px", [345, 492]);
+      const pdf = new jsPDF("p", "px", [345, 491]);
       pdf.addImage(imgData, "JPEG", 0, 0);
+      // pdf.output("dataurlnewwindow");
       pdf.save("resume.pdf");
     });
   };
