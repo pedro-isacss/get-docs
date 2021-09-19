@@ -42,6 +42,7 @@
   cursor: pointer;
   border-radius: 50%;
   opacity: 0;
+  font-size: 0;
 }
 
 .container .paper .right .containerTopic {

@@ -1,0 +1,169 @@
+p {
+  color: #444;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper {
+  display: flex;
+  flex-direction: column;
+  width: 614px;
+  height: 874px;
+  margin: 56px 24px;
+  zoom: 0.8;
+  position: relative;
+}
+
+.container .paper .header {
+  display: flex;
+  align-items: center;
+  height: min-content;
+  width: 100%;
+  padding: 48px;
+}
+
+.container .paper .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 88px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container .paper .header .logo input[type="file"] {
+  z-index: 10;
+  cursor: pointer;
+  width: 88px;
+  height: 88px;
+  font-size: 0;
+  opacity: 0;
+}
+
+.container .paper .header p {
+  margin-left: 24px;
+  font-size: 40px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.container .paper .date {
+  margin: 0 48px;
+  opacity: 0.8;
+}
+
+.container .paper .letter {
+  margin: 24px 48px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.container .paper .footer {
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  height: 150px;
+  width: 100%;
+}
+
+.container .paper .footer .canvas {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .paper .footer .canvas .canvas1 {
+  height: 100%;
+  width: 24px;
+  right: 0;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.container .paper .footer .canvas .canvas2 {
+  height: 70px;
+  width: 326px;
+  position: absolute;
+  left: 0;
+}
+
+.container .paper .footer .infos {
+  height: 100%;
+  display: flex;
+  padding: 0 48px 0 24px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .paper .footer .infos div {
+  display: flex;
+  margin: 12px 0;
+}
+
+.container .paper .footer .infos div p {
+  margin-left: 8px;
+  width: 10pc;
+  text-overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+}
+
+.buttons .colorBtn,
+.buttons .activeAwardsBtn {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .colorBtn input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons .colorBtn input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 100px;
+  height: 48px;
+  width: 48px;
+  opacity: 0;
+}
+
+.buttons .downloadBtn {
+  border: none;
+  padding: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+}

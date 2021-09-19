@@ -1,5 +1,11 @@
 [
   {
+    "image": "/images/letter-1.jpg",
+    "link": "/letter-1",
+    "name": "letter 1",
+    "type": "social_network"
+  },
+  {
     "image": "/images/instagram-1.jpg",
     "link": "/instagram-1",
     "name": "Instagram 1",
