@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./index.module.css";
-import NavBar from "../../Components/NavBar";
-import Footer from "../../Components/Footer";
+import NavBar from "../../../Components/NavBar";
+import Footer from "../../../Components/Footer";
 import { BsFillImageFill } from "react-icons/bs";
 import { FiPhone } from "react-icons/fi";
 import { GoLocation } from "react-icons/go";
@@ -117,7 +117,7 @@ const Letter1 = () => {
           <AiFillFilePdf color="#fff" size={40} />
         </button>
       </div>
-      <Footer />
+      <Footer logoSrc="../icons/logo-white.svg" />
     </div>
   );
 };

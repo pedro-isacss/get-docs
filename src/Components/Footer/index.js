@@ -1,13 +1,13 @@
 import styles from "./index.module.css";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ logoSrc }) => {
   const date = new Date();
   return (
     <div className={styles.container}>
       <footer>
         <div>
-          <img src="./icons/logo-white.svg" alt="Get Docs" />
+          <img src={logoSrc} alt="Get Docs" />
           <p>
             Get Docs is an{" "}
             <a

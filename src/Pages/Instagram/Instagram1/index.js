@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./index.module.css";
-import NavBar from "../../Components/NavBar";
-import Footer from "../../Components/Footer";
+import NavBar from "../../../Components/NavBar";
+import Footer from "../../../Components/Footer";
 import { FcImageFile } from "react-icons/fc";
 import { AiOutlineFontColors, AiOutlineBgColors } from "react-icons/ai";
 import { BsBoxArrowInDown } from "react-icons/bs";
@@ -103,7 +103,7 @@ const Instagram1 = () => {
           Download
         </a>
       </div>
-      <Footer />
+      <Footer logoSrc="../icons/logo-white.svg" />
     </div>
   );
 };

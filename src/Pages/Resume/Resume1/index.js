@@ -6,8 +6,8 @@ import { AiFillFilePdf, AiOutlineBgColors } from "react-icons/ai";
 import { RiBookmark3Line } from "react-icons/ri";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import NavBar from "../../Components/NavBar";
-import Footer from "../../Components/Footer";
+import NavBar from "../../../Components/NavBar";
+import Footer from "../../../Components/Footer";
 
 const Resume1 = () => {
   const [profileImg, setProfileImg] = useState(profileImgDefault);
@@ -160,7 +160,7 @@ const Resume1 = () => {
           <AiFillFilePdf color="#fff" size={40} />
         </button>
       </div>
-      <Footer />
+      <Footer logoSrc="../icons/logo-white.svg" />
     </div>
   );
 };

@@ -1,20 +1,26 @@
 [
   {
+    "image": "/images/poster-1.jpg",
+    "link": "poster/poster-1",
+    "name": "poster 1",
+    "type": "poster"
+  },
+  {
     "image": "/images/letter-1.jpg",
-    "link": "/letter-1",
+    "link": "letter/letter-1",
     "name": "letter 1",
-    "type": "social_network"
+    "type": "letter"
   },
   {
     "image": "/images/instagram-1.jpg",
-    "link": "/instagram-1",
+    "link": "instagram/instagram-1",
     "name": "Instagram 1",
-    "type": "social_network"
+    "type": "instagram"
   },
   {
     "image": "/images/resume-1.jpg",
-    "link": "/resume-1",
+    "link": "resume/resume-1",
     "name": "Resume 1",
-    "type": "professional"
+    "type": "resume"
   }
 ]
