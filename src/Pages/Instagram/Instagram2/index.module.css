@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper {
+  width: 1080px;
+  height: 1080px;
+  margin: 180px 24px;
+  zoom: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper p {
+  font-family: "Nunito", sans-serif;
+  color: #000;
+}
+
+.container .paper .messageContainer {
+  background-color: #fff;
+  border-radius: 32px;
+  width: 100%;
+  max-width: 640px;
+  /* box-shadow: 12px 12px 0 #000; */
+  border-top: 1px solid #000;
+  border-right: 16px solid #000;
+  border-bottom: 16px solid #000;
+  border-left: 1px solid #000;
+}
+
+.container .paper .messageContainer .title {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  padding: 24px 24px 0 24px;
+}
+
+.container .paper .messageContainer .description {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 24px;
+  padding: 0 24px;
+}
+
+.container .paper .messageContainer .button {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 24px;
+  border-top: 1px solid #000;
+  padding: 12px;
+}
+
+.container .paper .myuser {
+  margin-top: 102px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .textColorBtn,
+.buttons .colorBtn {
+  margin-bottom: 24px;
+  width: 48px;
+  height: 48px;
+  box-shadow: var(--shadow);
+  position: relative;
+  background-color: #fff;
+}
+
+.buttons .textColorBtn input,
+.buttons .colorBtn input {
+  position: absolute;
+  background-color: violet;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons .textColorBtn input::-webkit-color-swatch,
+.buttons .colorBtn input::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+.buttons .downloadBtn {
+  padding: 12px;
+}
