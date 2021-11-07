@@ -10,8 +10,14 @@
 :root {
   --theme: #013486;
   --white: #fff;
+  --black: #444;
   --maxWidth: 1224px;
   --paddingMaxWidth: 24px;
   --radius: 4px;
   --shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: var(--black);
+  font-size: 32px;
 }

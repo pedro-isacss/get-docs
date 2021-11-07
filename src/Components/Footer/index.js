@@ -30,20 +30,43 @@ const Footer = ({ logoSrc }) => {
           <p>&copy; Get Docs - {date.getFullYear()}</p>
         </div>
         <div>
-          <span>Links</span>
-          <a href="">Link</a>
-          <a href="">Link</a>
-          <a href="">Link</a>
-          <a href="">Link</a>
+          <span>Important</span>
+          <a
+            href="https://bit.ly/paypal_opensource"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Support
+          </a>
+          <a
+            href="https://github.com/pedro-isacss/get-docs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Collaborate
+          </a>
+          <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
         <div>
-          <span>Links</span>
-          <a href="">Link</a>
-          <a href="">Link</a>
-          <a href="">Link</a>
-          <a href="">Link</a>
+          <span>Author</span>
+          <a href="https://bit.ly/git_pedro" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a
+            href="https://bit.ly/ss_pedroisac"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
+          </a>
+          <a
+            href="mailto:ss.pedroisac@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            E-mail
+          </a>
         </div>
-        <div>Another content</div>
       </footer>
     </div>
   );

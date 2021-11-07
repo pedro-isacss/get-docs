@@ -3,7 +3,7 @@
   width: 100%;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
   background-color: #fff;
 }
 
@@ -27,4 +27,11 @@
   color: var(--theme);
   font-size: 18px;
   font-weight: 500;
+}
+
+.container div nav a:last-child {
+  background-color: var(--theme);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: var(--radius);
 }

@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 // === RESUME ===
 import Resume1 from "./Pages/Resume/Resume1";
 
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
           {/* === RESUME === */}
           <Route path="/resume/resume-1" component={Resume1} />
           {/* === INSTAGRAM === */}

@@ -9,11 +9,22 @@ const NavBar = () => {
           <img src="/icons/logo.svg" alt="Get Docs" />
         </Link>
         <nav>
-          <a href="#">Menu</a>
-          <a href="#">Menu</a>
-          <a href="#">Menu</a>
-          <a href="#">Menu</a>
-          <a href="#">Menu</a>
+          <Link to="/">Home</Link>
+          <a href="#templates">Templates</a>
+          <a
+            href="https://github.com/pedro-isacss/get-docs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Collaborate
+          </a>
+          <a
+            href="https://bit.ly/paypal_opensource"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Support
+          </a>
         </nav>
       </div>
     </div>

@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  max-width: var(--maxWidth);
+  margin: 40px auto 40px auto;
+}
+
+.container h1 {
+  color: var(--black);
+  font-size: 32px;
+}
+
+.container h2 {
+  color: var(--black);
+  font-size: 24px;
+  margin: 40px 0 24px 0;
+}
+
+.container p {
+  color: var(--black);
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 28px;
+}
+
+.container a {
+  color: var(--theme);
+}
+
+.container ul {
+  list-style-position: inside;
+}
+
+.container ul li {
+  color: var(--black);
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 28px;
+}
