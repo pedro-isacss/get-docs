@@ -10,7 +10,6 @@ const NavBar = () => {
         </Link>
         <nav>
           <Link to="/">Home</Link>
-          <a href="#templates">Templates</a>
           <a
             href="https://github.com/pedro-isacss/get-docs"
             target="_blank"

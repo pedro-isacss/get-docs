@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Uchen&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper {
+  width: 1080px;
+  height: 1080px;
+  margin: 180px 24px;
+  zoom: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper .abbr {
+  font-size: 124px;
+  font-family: "Handlee", cursive;
+}
+
+.container .paper .title {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-top: 24px;
+  font-family: "Uchen", serif;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+}
+
+.buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .textColorBtn,
+.buttons .colorBtn {
+  margin-bottom: 24px;
+  width: 48px;
+  height: 48px;
+  box-shadow: var(--shadow);
+  position: relative;
+  background-color: #fff;
+}
+
+.buttons .textColorBtn input,
+.buttons .colorBtn input {
+  position: absolute;
+  background-color: violet;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons .textColorBtn input::-webkit-color-swatch,
+.buttons .colorBtn input::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+.buttons .downloadBtn {
+  padding: 12px;
+}

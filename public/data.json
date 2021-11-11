@@ -1,5 +1,11 @@
 [
   {
+    "image": "/images/instagram-3.jpg",
+    "link": "instagram/instagram-3",
+    "name": "instagram 3",
+    "type": "instagram"
+  },
+  {
     "image": "/images/instagram-2.jpg",
     "link": "instagram/instagram-2",
     "name": "instagram 2",

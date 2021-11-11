@@ -8,6 +8,7 @@ import Resume1 from "./Pages/Resume/Resume1";
 // === INSTAGRAM ===
 import Instagram1 from "./Pages/Instagram/Instagram1";
 import Instagram2 from "./Pages/Instagram/Instagram2";
+import Instagram3 from "./Pages/Instagram/Instagram3";
 
 // === LETTER ===
 import Letter1 from "./Pages/Letter/Letter1";
@@ -27,6 +28,7 @@ function App() {
           {/* === INSTAGRAM === */}
           <Route path="/instagram/instagram-1" component={Instagram1} />
           <Route path="/instagram/instagram-2" component={Instagram2} />
+          <Route path="/instagram/instagram-3" component={Instagram3} />
           {/* === LETTER === */}
           <Route path="/letter/letter-1" component={Letter1} />
           {/* === POSTER === */}
