@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Ubuntu:wght@400;500&display=swap");
 
 .container {
   display: flex;
@@ -18,74 +18,73 @@
   zoom: 0.8;
   position: relative;
   padding: 48px;
-  background-image: url(./background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
-.container .paper p {
-  z-index: 100;
-}
-
-.container .paper canvas {
+.container .paper .canvas {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  opacity: 8;
   position: absolute;
+  bottom: -100px;
+  left: -100px;
+}
+
+.container .paper .promotion {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
   width: 100%;
+  max-width: 580px;
+  text-align: center;
+}
+
+.container .paper .code {
+  font-size: 124px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-top: 32px;
+  font-family: "Road Rage", cursive;
+  width: 100%;
+  max-width: 580px;
+}
+
+.container .paper .imgContainer {
+  z-index: 100;
+  position: relative;
+}
+
+.container .paper .imgContainer input {
+  background-color: #fff;
+  position: absolute;
   height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.7;
-  z-index: 0;
-}
-
-.container .header {
-  background-color: #fff;
   width: 100%;
-  padding: 32px;
-  z-index: 10;
-  position: relative;
+  cursor: pointer;
+  opacity: 0;
 }
 
-.container .header p:nth-child(1) {
-  color: rgb(116, 116, 116);
-  text-align: center;
-  padding: 12px;
-  font-family: "Poppins", sans-serif;
+.container .paper .imgContainer img {
+  max-width: 450px;
+  margin-top: 40px;
+  max-height: 400px;
 }
 
-.container .header p:nth-child(2) {
-  font-weight: 800;
-  font-size: 48px;
-  text-align: center;
-  padding: 16px 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.container .header p:nth-child(3) {
-  color: rgb(116, 116, 116);
-  text-align: center;
-  padding: 12px;
+.container .paper .info {
   font-size: 24px;
-  font-family: "Poppins", sans-serif;
-}
-
-.container .footer {
-  background-color: #fff;
-  width: 100%;
-  padding: 32px;
-  z-index: 10;
-  position: relative;
-}
-
-.container .footer p {
+  text-transform: uppercase;
+  color: #fff;
   text-align: center;
-  padding: 12px;
-}
-
-.container .footer p:nth-child(1) {
-  font-size: 16px;
-  letter-spacing: 4px;
-  color: rgb(116, 116, 116);
+  margin-top: 32px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  z-index: 150;
+  position: relative;
 }
 
 .buttons {

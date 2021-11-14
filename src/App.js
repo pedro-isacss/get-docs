@@ -15,6 +15,7 @@ import Letter1 from "./Pages/Letter/Letter1";
 
 // === POSTER ===
 import Poster1 from "./Pages/Poster/Poster1";
+import Poster2 from "./Pages/Poster/Poster2";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/letter/letter-1" component={Letter1} />
           {/* === POSTER === */}
           <Route path="/poster/poster-1" component={Poster1} />
+          <Route path="/poster/poster-2" component={Poster2} />
         </Switch>
       </BrowserRouter>
     </div>
