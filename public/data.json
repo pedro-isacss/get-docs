@@ -1,5 +1,11 @@
 [
   {
+    "image": "/images/poster-3.jpg",
+    "link": "poster/poster-3",
+    "name": "poster 3",
+    "type": "poster"
+  },
+  {
     "image": "/images/poster-2.jpg",
     "link": "poster/poster-2",
     "name": "poster 2",
