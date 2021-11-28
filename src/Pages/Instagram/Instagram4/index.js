@@ -4,13 +4,13 @@ import Footer from "../../../Components/Footer";
 import styles from "./index.module.css";
 import { BsBoxArrowInDown } from "react-icons/bs";
 import html2canvas from "html2canvas";
-import { AiOutlineFontColors, AiOutlineBgColors } from "react-icons/ai";
+import { AiOutlineFileImage } from "react-icons/ai";
+
+import background from "./background.jpg";
 
 const Instagram4 = () => {
-  const [img, setImg] = useState(`${window.origin}/images/instagram4-defaultbg.webp`);
-  const [color, setColor] = useState("#212121");
-  const [textColor, setTextColor] = useState("#eeeeee");
-  const [bgOpacity, setBgOpacity] = useState(80);
+  const [img, setImg] = useState(background);
+  const [color, setColor] = useState("#000");
 
   const handleDownload = () => {
     const paper = document.getElementById("paper");
@@ -27,65 +27,33 @@ const Instagram4 = () => {
       <NavBar />
       <div
         className={styles.paper}
-        style={{
-          backgroundImage: `url(${img})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover'
-        }}
         id="paper"
+        style={{ backgroundImage: `url(${img})` }}
       >
         <div
+          className={styles.cover}
           style={{
-            width: '100%',
-            height: '100%',
-            backgroundColor: `${color}${bgOpacity}`,
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center'
+            backgroundColor: `${color}`,
           }}
         >
-          <p
-            style={{
-              color: textColor,
-              fontFamily: 'Praise',
-              fontSize:  "45.3333px",
-            }}
-            contentEditable
-          >FAÇA UMA PAUSA</p>
-          <p
-            style={{
-              color: textColor,
-              fontSize:  "113.333px",
-              marginBottom: "200px",
-              marginTop: "200px"
-            }}
-            contentEditable
-          >CURTA O AR LIVRE</p>
-          <p
-            style={{
-              color: textColor,
-              fontSize:  "26.6667px"
-            }}
-            contentEditable
-          >RELAXE E SE RENOVE ENTRANDO EM SINTONIA COM A NATUREZA.</p>
+          <p className={styles.topText} contentEditable>
+            FAÇA UMA PAUSA
+          </p>
+          <p className={styles.middleText} contentEditable>
+            RELAXE ENTRANDO EM SINTONIA COM A NATUREZA
+          </p>
+          <p className={styles.bottomText} contentEditable>
+            @MY_USER
+          </p>
         </div>
       </div>
       <div className={styles.buttons}>
-        <button className={styles.textColorBtn}>
-          <AiOutlineFontColors size={32} color={color} />
+        <button className={styles.backgroundBtn}>
+          <AiOutlineFileImage size={32} color={color} />
           <input
-            type="color"
-            value={textColor}
-            onChange={(e) => setTextColor(e.target.value)}
-          />
-        </button>
-        <button className={styles.colorBtn}>
-          <AiOutlineBgColors size={32} color={color} />
-          <input
-            type="color"
-            value={color}
-            onChange={(e) => setColor(e.target.value)}
+            type="file"
+            accept="image/png, image/jpeg"
+            onChange={(e) => setImg(URL.createObjectURL(e.target.files[0]))}
           />
         </button>
         <button
