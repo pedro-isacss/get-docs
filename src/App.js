@@ -12,6 +12,7 @@ import Instagram3 from "./Pages/Instagram/Instagram3";
 
 // === LETTER ===
 import Letter1 from "./Pages/Letter/Letter1";
+import Letter2 from "./Pages/Letter/Letter2";
 
 // === POSTER ===
 import Poster1 from "./Pages/Poster/Poster1";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/instagram/instagram-3" component={Instagram3} />
           {/* === LETTER === */}
           <Route path="/letter/letter-1" component={Letter1} />
+          <Route path="/letter/letter-2" component={Letter2} />
           {/* === POSTER === */}
           <Route path="/poster/poster-1" component={Poster1} />
           <Route path="/poster/poster-2" component={Poster2} />

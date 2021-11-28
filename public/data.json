@@ -1,5 +1,11 @@
 [
   {
+    "image": "/images/letter-2.jpg",
+    "link": "letter/letter-2",
+    "name": "letter 2",
+    "type": "letter"
+  },
+  {
     "image": "/images/poster-3.jpg",
     "link": "poster/poster-3",
     "name": "poster 3",

@@ -1,0 +1,106 @@
+p {
+  color: #444;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 614px;
+  height: 874px;
+  margin: 56px 24px;
+  zoom: 0.8;
+  position: relative;
+}
+
+.container .paper .content {
+  height: 90%;
+  width: 90%;
+  background-color: aliceblue;
+  padding: 40px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.container .paper .content .title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.container .paper .content br {
+  display: block;
+  content: "";
+  margin-top: 12px;
+}
+
+.container .paper .content .text {
+  text-align: justify;
+  margin-top: 32px;
+  line-height: calc(16px * 1.5);
+  color: rgb(43, 43, 43);
+}
+
+.container .paper .content .signature {
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  width: calc(100% - 80px);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 56px;
+  bottom: 56px;
+}
+
+.buttons .colorBtn,
+.buttons .activeAwardsBtn {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
+  border-radius: 50%;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons .colorBtn input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.buttons .colorBtn input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 100px;
+  height: 48px;
+  width: 48px;
+  opacity: 0;
+}
+
+.buttons .downloadBtn {
+  border: none;
+  padding: 12px;
+  border-radius: 100px;
+  cursor: pointer;
+}
