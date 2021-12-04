@@ -10,6 +10,7 @@ import Instagram1 from "./Pages/Instagram/Instagram1";
 import Instagram2 from "./Pages/Instagram/Instagram2";
 import Instagram3 from "./Pages/Instagram/Instagram3";
 import Instagram4 from "./Pages/Instagram/Instagram4";
+import Instagram5 from "./Pages/Instagram/Instagram5";
 
 // === LETTER ===
 import Letter1 from "./Pages/Letter/Letter1";
@@ -34,6 +35,7 @@ function App() {
           <Route path="/instagram/instagram-2" component={Instagram2} />
           <Route path="/instagram/instagram-3" component={Instagram3} />
           <Route path="/instagram/instagram-4" component={Instagram4} />
+          <Route path="/instagram/instagram-5" component={Instagram5} />
           {/* === LETTER === */}
           <Route path="/letter/letter-1" component={Letter1} />
           <Route path="/letter/letter-2" component={Letter2} />
