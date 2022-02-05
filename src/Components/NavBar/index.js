@@ -18,7 +18,7 @@ const NavBar = () => {
             Collaborate
           </a>
           <a
-            href="https://bit.ly/paypal_opensource"
+            href="https://www.buymeacoffee.com/ss.pedroisac/"
             target="_blank"
             rel="noreferrer"
           >
