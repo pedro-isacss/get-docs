@@ -32,7 +32,7 @@ const Footer = ({ logoSrc }) => {
         <div>
           <span>Important</span>
           <a
-            href="https://bit.ly/paypal_opensource"
+            href="https://www.buymeacoffee.com/ss.pedroisac/"
             target="_blank"
             rel="noreferrer"
           >
