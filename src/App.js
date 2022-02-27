@@ -24,7 +24,7 @@ import Poster3 from "./Pages/Poster/Poster3";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/get-docs">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
