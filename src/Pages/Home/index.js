@@ -63,7 +63,7 @@ const Home = () => {
             </p>
             <a href="#templates">Choose a template</a>
           </div>
-          <img src="/icons/docs.png" alt="templates examples" />
+          <img src="/get-docs/icons/docs.png" alt="templates examples" />
         </div>
       </section>
       <section id="templates" className={styles.templatesContainer}>
@@ -74,9 +74,9 @@ const Home = () => {
             style={
               "all" === currentType
                 ? {
-                    backgroundColor: "var(--theme)",
-                    color: "var(--white)",
-                  }
+                  backgroundColor: "var(--theme)",
+                  color: "var(--white)",
+                }
                 : null
             }
           >
@@ -89,9 +89,9 @@ const Home = () => {
                 style={
                   currentType === type
                     ? {
-                        backgroundColor: "var(--theme)",
-                        color: "var(--white)",
-                      }
+                      backgroundColor: "var(--theme)",
+                      color: "var(--white)",
+                    }
                     : null
                 }
               >
