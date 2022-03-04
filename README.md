@@ -19,7 +19,7 @@ Finally start the development server:
 yarn start
 ```
 
-If all went well, you can now see Get Docs running on **localhost:3000**.
+If all went well, you can now see Get Docs running on **localhost:3000/get-docs**.
 
 ## Licence
 Get Docs is [MIT licensed](https://github.com/pedro-isacss/get-docs/blob/master/LICENSE).
