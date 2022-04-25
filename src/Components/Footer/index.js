@@ -49,15 +49,15 @@ const Footer = ({ logoSrc }) => {
         </div>
         <div>
           <span>Author</span>
-          <a href="https://bit.ly/git_pedro" target="_blank" rel="noreferrer">
+          <a href="https://github.com/pedro-isacss" target="_blank" rel="noreferrer">
             GitHub
           </a>
           <a
-            href="https://bit.ly/ss_pedroisac"
+            href="https://www.linkedin.com/in/pedro-isacss/"
             target="_blank"
             rel="noreferrer"
           >
-            Instagram
+            LinkedIn
           </a>
           <a
             href="mailto:ss.pedroisac@gmail.com"
